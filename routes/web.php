@@ -23,5 +23,10 @@ Route::get('/profiles',[queryBuilderController::class,'getProfilesData']);
 Route::get('/categories',[queryBuilderController::class,'getCategoriesData']);
 Route::get('/brands',[queryBuilderController::class,'getBrandsData']);
 Route::get('/products',[queryBuilderController::class,'getProductsData']);
+Route::get('/product-sliders',[queryBuilderController::class,'getProductSlidersData']);
+Route::get('/product-details',[queryBuilderController::class,'getProductDetailsData']);
+Route::get('/product-reviews',[queryBuilderController::class,'getProductReviewsData']);
+Route::get('/product-wishes',[queryBuilderController::class,'getProductWishesData']);
+Route::get('/product-carts',[queryBuilderController::class,'getProductCartsData']);
 
 require __DIR__.'/auth.php';

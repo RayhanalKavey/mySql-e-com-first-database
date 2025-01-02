@@ -22,4 +22,20 @@ class queryBuilderController extends Controller
     function getProductsData(){
         return DB::table('products')->get();
     }
+    function getProductSlidersData(){
+        return DB::table('product_sliders')->get();
+    }
+    function getProductDetailsData(){
+        return DB::table('product_details')->get();
+    }
+    function getProductReviewsData(){
+        return DB::table('product_reviews')->get();
+    }
+    function getProductWishesData(){
+        return DB::table('product_wishes')->get();
+    }
+    function getProductCartsData(){
+        return DB::table('product_carts')->get();
+    }
+   
 }
